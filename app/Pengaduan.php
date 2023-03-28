@@ -19,7 +19,7 @@ class Pengaduan extends Model
     }
 
     public function tanggapan() {
-        return $this->hasMany('App\Tanggapan', 'id_tanggapan');
+        return $this->hasMany('App\Tanggapan', 'id_tanggapan', 'id_pengaduan');
     }
 }
 

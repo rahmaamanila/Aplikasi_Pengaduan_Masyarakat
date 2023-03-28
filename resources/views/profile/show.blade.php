@@ -98,7 +98,7 @@
                                         <div class="col-md">
                                             <label for="province_id" class="col-sm-6 col-form-label">Provinsi</label>
                                             <div class="col-sm-12">
-                                                <input class="form-control" type="text" name="nama" value="{{ $user->province->name }}" disabled/>
+                                                <input class="form-control" type="text" name="nama" value="{{ $user->province->name ?? '' }}" disabled/>
                                             </div>
                                         </div>
                                     </div>
@@ -107,13 +107,13 @@
                                         <div class="col-md">
                                             <label for="regency_id" class="col-sm-6 col-form-label">Kabupaten</label>
                                             <div class="col-sm-12">
-                                                <input class="form-control" type="text" name="nama" value="{{ $user->regency->name }}" disabled/>
+                                                <input class="form-control" type="text" name="nama" value="{{ $user->regency->name ?? '' }}" disabled/>
                                             </div>
                                         </div>  
                                         <div class="col-md">
                                             <label for="district_id" class="col-sm-6 col-form-label">Kecamatan</label>
                                             <div class="col-sm-12">
-                                                <input class="form-control" type="text" name="nama" value="{{ $user->district->name }}" disabled/>
+                                                <input class="form-control" type="text" name="nama" value="{{ $user->district->name ?? '' }}" disabled/>
                                             </div>
                                         </div>
                                     </div>
@@ -122,7 +122,7 @@
                                         <div class="col-md">
                                             <label for="village_id" class="col-sm-6 col-form-label">Desa</label>
                                             <div class="col-sm-12">
-                                                <input class="form-control" type="text" name="nama" value="{{ $user->village->name }}" disabled/>
+                                                <input class="form-control" type="text" name="nama" value="{{ $user->village->name ?? '' }}" disabled/>
                                             </div>
                                         </div>
                                     </div>

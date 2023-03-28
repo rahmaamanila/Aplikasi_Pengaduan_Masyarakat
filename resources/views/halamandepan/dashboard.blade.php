@@ -48,7 +48,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="row mb-5">
+                <div class="row mb-3">
                   <div class="col-md-12 col-lg-4">
                     <div class="card">
                       <div class="card-body">
@@ -95,6 +95,77 @@
                       </div>
                     </div>
                   </div>
+                  <div class="col-md-12 col-lg-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title d-flex align-items-start justify-content-between">
+                          <div class="avatar flex-shrink-0">
+                            <img src="../assets/img/icons/unicons/chart-success.png" alt="Credit Card" class="rounded" />
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn p-0" type="button" id="cardOpt4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
+                              <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="fw-semibold d-block mb-1">Pengaduan Pending</span>
+                        <h3 class="card-title text-nowrap mb-2">{{ $pending }}</h3>
+                        <!-- <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -14.82%</small> -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mb-3">
+                  <div class="col-md-12 col-lg-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title d-flex align-items-start justify-content-between">
+                          <div class="avatar flex-shrink-0">
+                            <img src="../assets/img/icons/unicons/chart.png" alt="Credit Card" class="rounded" />
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn p-0" type="button" id="cardOpt4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
+                              <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="fw-semibold d-block mb-1">Pengaduan Proses</span>
+                        <h3 class="card-title text-nowrap mb-2">{{ $proses }}</h3>
+                        <!-- <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -14.82%</small> -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12 col-lg-4">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="card-title d-flex align-items-start justify-content-between">
+                          <div class="avatar flex-shrink-0">
+                            <img src="../assets/img/icons/unicons/chart-success.png" alt="Credit Card" class="rounded" />
+                          </div>
+                          <div class="dropdown">
+                            <button class="btn p-0" type="button" id="cardOpt4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
+                              <a class="dropdown-item" href="javascript:void(0);">View More</a>
+                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+                            </div>
+                          </div>
+                        </div>
+                        <span class="fw-semibold d-block mb-1">Pengaduan Selesai</span>
+                        <h3 class="card-title text-nowrap mb-2">{{ $selesai }}</h3>
+                        <!-- <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -14.82%</small> -->
+                      </div>
+                    </div>
+                  </div>
                   @if (auth()->user()->level == "admin")
                     <div class="col-md-12 col-lg-4">
                       <div class="card">
@@ -120,75 +191,6 @@
                       </div>
                     </div>
                   @endif
-                  <div class="col-md-12 col-lg-4">
-                    <div class="card mt-3">
-                      <div class="card-body">
-                        <div class="card-title d-flex align-items-start justify-content-between">
-                          <div class="avatar flex-shrink-0">
-                            <img src="../assets/img/icons/unicons/chart-success.png" alt="Credit Card" class="rounded" />
-                          </div>
-                          <div class="dropdown">
-                            <button class="btn p-0" type="button" id="cardOpt4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
-                              <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                            </div>
-                          </div>
-                        </div>
-                        <span class="fw-semibold d-block mb-1">Pengaduan Pending</span>
-                        <h3 class="card-title text-nowrap mb-2">{{ $pending }}</h3>
-                        <!-- <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -14.82%</small> -->
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12 col-lg-4">
-                    <div class="card mt-3">
-                      <div class="card-body">
-                        <div class="card-title d-flex align-items-start justify-content-between">
-                          <div class="avatar flex-shrink-0">
-                            <img src="../assets/img/icons/unicons/chart.png" alt="Credit Card" class="rounded" />
-                          </div>
-                          <div class="dropdown">
-                            <button class="btn p-0" type="button" id="cardOpt4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
-                              <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                            </div>
-                          </div>
-                        </div>
-                        <span class="fw-semibold d-block mb-1">Pengaduan Proses</span>
-                        <h3 class="card-title text-nowrap mb-2">{{ $proses }}</h3>
-                        <!-- <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -14.82%</small> -->
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-md-12 col-lg-4">
-                    <div class="card mt-3">
-                      <div class="card-body">
-                        <div class="card-title d-flex align-items-start justify-content-between">
-                          <div class="avatar flex-shrink-0">
-                            <img src="../assets/img/icons/unicons/chart-success.png" alt="Credit Card" class="rounded" />
-                          </div>
-                          <div class="dropdown">
-                            <button class="btn p-0" type="button" id="cardOpt4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                              <i class="bx bx-dots-vertical-rounded"></i>
-                            </button>
-                            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="cardOpt4">
-                              <a class="dropdown-item" href="javascript:void(0);">View More</a>
-                              <a class="dropdown-item" href="javascript:void(0);">Delete</a>
-                            </div>
-                          </div>
-                        </div>
-                        <span class="fw-semibold d-block mb-1">Pengaduan Selesai</span>
-                        <h3 class="card-title text-nowrap mb-2">{{ $selesai }}</h3>
-                        <!-- <small class="text-danger fw-semibold"><i class="bx bx-down-arrow-alt"></i> -14.82%</small> -->
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>

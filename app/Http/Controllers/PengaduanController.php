@@ -120,7 +120,13 @@ class PengaduanController extends Controller
     // hapus pengaduan admin
     public function delete($id)
     {
+        // Pengaduan::where('id_pengaduan',$id)->delete();
+        // return redirect('/pengaduan');
+
+        $pengaduan = Pengaduan::where('id_pengaduan',$id)->first();
+        Tanggapan::where('id_pengaduan',$pengaduan->id_pengaduan)->delete();
         Pengaduan::where('id_pengaduan',$id)->delete();
+
         return redirect('/pengaduan');
     }
 }

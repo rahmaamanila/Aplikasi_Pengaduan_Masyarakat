@@ -39,6 +39,11 @@
                                                 <td>{{ $item->user->nik ?? ''}}</td>
                                             </tr>
                                             <tr>
+                                                <th>Nama</th>
+                                                <td>:</td>
+                                                <td>{{ $item->user->nama ?? ''}}</td>
+                                            </tr>
+                                            <tr>
                                                 <th>Tanggal Pengaduan</th>
                                                 <td>:</td>
                                                 <td>{{ $item->tgl_pengaduan }}</td>

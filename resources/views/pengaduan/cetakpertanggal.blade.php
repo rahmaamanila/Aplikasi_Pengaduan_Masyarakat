@@ -32,8 +32,8 @@
 			<tr>
 				<td>{{$loop->iteration }}</td>
 				<td>{{$p->tgl_pengaduan}}</td>
-				<td>{{$p->user->nik}}</td>
-				<td>{{$p->user->nama}}</td>
+				<td>{{$p->user->nik ?? ''}}</td>
+				<td>{{$p->user->nama ?? ''}}</td>
                 <td>{{\Str::limit($p->isi_laporan,30)}}</td>
 				<td><img src="{{ public_path('image/'. $p->foto ) }}" width="100" height="50" 0alt=""></td>
 				<td>

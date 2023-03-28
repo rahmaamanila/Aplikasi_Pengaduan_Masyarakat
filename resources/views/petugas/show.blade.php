@@ -75,19 +75,19 @@
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label" for="country">Provinsi</label>
-                                            <input type="text" class="form-control" name="province_id" value="{{ $petugas->province->name }}" disabled/>
+                                            <input type="text" class="form-control" name="province_id" value="{{ $petugas->province->name ?? '' }}" disabled/>
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">Kabupaten</label>
-                                            <input type="text" class="form-control" name="regency_id" value="{{ $petugas->regency->name }}" disabled/>
+                                            <input type="text" class="form-control" name="regency_id" value="{{ $petugas->regency->name ?? '' }}" disabled/>
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">Kecamatan</label>
-                                            <input type="text" class="form-control" name="district_id" value="{{ $petugas->district->name }}" disabled/>
+                                            <input type="text" class="form-control" name="district_id" value="{{ $petugas->district->name ?? '' }}" disabled/>
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label">Desa</label>
-                                            <input type="text" class="form-control" name="village_id" value="{{ $petugas->village->name }}" disabled/>
+                                            <input type="text" class="form-control" name="village_id" value="{{ $petugas->village->name ?? '' }}" disabled/>
                                         </div>
                                     </div>
                                     <div class="mt-2">
