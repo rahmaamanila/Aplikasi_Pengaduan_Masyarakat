@@ -13,10 +13,6 @@ class UserController extends Controller
 {
     public function index(Request $request)
     {
-        // $user = User::all();
-        // return view('user.index', compact('user'));
-
-        // 
         $user = User::where('level', 'masyarakat')->paginate(10);
         return view('user.index', compact('user'));
     }

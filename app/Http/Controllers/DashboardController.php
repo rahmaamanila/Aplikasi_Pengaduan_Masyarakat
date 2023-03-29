@@ -16,15 +16,6 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        // $jumlah_pengaduan = Pengaduan::all()->count();
-        // $jumlah_tanggapan = Tanggapan::all()->count();
-        // $jumlah_petugas = User::where('level', 'petugas')->count();
-
-        // return view('halamandepan.dashboard')
-        // ->with('jumlah_pengaduan', $jumlah_pengaduan)
-        // ->with('jumlah_tanggapan', $jumlah_tanggapan)
-        // ->with('jumlah_petugas', $jumlah_petugas);
-
         return view('halamandepan.dashboard',[
             'pengaduan' => Pengaduan::count(),
             'petugas' => User::where('level','=', 'PETUGAS')->count(),

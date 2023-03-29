@@ -84,7 +84,6 @@ class ProfileController extends Controller
     {
         $messages = [
             'required' => 'Tidak boleh kosong',
-            'unique' => 'Sudah terdaftar',
             'numeric' => 'Hanya menginput angka'
         ];
 
@@ -107,24 +106,6 @@ class ProfileController extends Controller
             'rw' => $request->rw,
             'kode_pos' => $request->kode_pos,
     	]);
- 
-        // $data_user = new User();
-        // $data_user->nik = request()->get('nik');
-        // $data_user->nama = request()->get('nama');
-        // $data_user->email = request()->get('email');
-        // $data_user->password = bcrypt(request()->get('password'));
-        // $data_user->telp = request()->get('telp');
-        // $data_user->jenis_kel = request()->get('jenis_kel');
-        // $data_user->alamat = request()->get('alamat');
-        // $data_user->level = 'petugas ';
-        // $data_user->rt = request()->get('rt');
-        // $data_user->rw = request()->get('rw');
-        // $data_user->kode_pos = request()->get('kode_pos');
-        // $data_user->province_id = request()->get('province_id');
-        // $data_user->regency_id = request()->get('regency_id');
-        // $data_user->district_id = request()->get('district_id');
-        // $data_user->village_id = request()->get('village_id');
-        // $data_user->update();
 
     	return redirect()->back();
     }
@@ -186,7 +167,6 @@ class ProfileController extends Controller
     {
         $messages = [
             'required' => 'Tidak boleh kosong',
-            'unique' => 'Sudah terdaftar',
             'numeric' => 'Hanya menginput angka'
         ];
 

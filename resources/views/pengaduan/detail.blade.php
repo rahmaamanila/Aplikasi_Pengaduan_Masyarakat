@@ -151,8 +151,7 @@
                                             @if (empty(@$data_tanggapan->tanggapan))
                                             Belum ada tanggapan
                                             @else
-                                            <p>Petugas : {{@$data_tanggapan->id}}</p>
-                                            <p>{{@$data_tanggapan->tanggapan}}</p>
+                                                {{@$data_tanggapan->tanggapan}}
                                             @endif
 
                                             @if (empty(@$data_tanggapan->tanggapan))

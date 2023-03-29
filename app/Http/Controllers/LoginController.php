@@ -109,14 +109,6 @@ class LoginController extends Controller
             'village_id' => 'required'
         ],$messages);
 
-        // $user = User::create($request->except(['_token']));
-
-        // event(new Registered($user));
-
-        // auth()->login($user);
-
-        // return redirect()->route('verification.notice')->with('success', 'Akun berhasil dibuat, silahkan verifikasi Email Anda');
-
         $data_user = new User();
         $data_user->nik = request()->get('nik');
         $data_user->nama = request()->get('nama');
