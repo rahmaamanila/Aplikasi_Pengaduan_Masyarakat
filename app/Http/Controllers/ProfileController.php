@@ -90,7 +90,7 @@ class ProfileController extends Controller
 
         $this->validate($request,[
             'nama' => 'required',
-            'email' => 'required|email|unique:users,email',
+            'email' => 'required|email',
             'telp' => 'required|numeric',
             'alamat' => 'required',
             'rt' => 'required|numeric',
@@ -192,7 +192,7 @@ class ProfileController extends Controller
 
         $this->validate($request,[
             'nama' => 'required',
-            'email' => 'required|email|unique:users,email',
+            'email' => 'required|email',
             'telp' => 'required|numeric',
             'alamat' => 'required',
             'rt' => 'required|numeric',

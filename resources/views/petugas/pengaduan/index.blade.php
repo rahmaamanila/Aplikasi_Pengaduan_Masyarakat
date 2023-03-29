@@ -27,6 +27,11 @@
                   <span class="text-muted fw-light">Tabel /</span> Tabel Pengaduan
                 </h4>
                 <div class="card">
+                  @if(session('Data dihapus'))
+                      <div class="alert alert-danger" role="alert">
+                      {{session('Data dihapus')}}
+                      </div>
+                  @endif
                   <div class="card-body">
                     <!-- <h5 class="card-header"><a href="/pengaduan/create" class="btn btn-primary">Tambah pengaduan</a></h5> -->
                     <div class="table-responsive text-nowrap">
@@ -87,5 +92,12 @@
 
     <!-- Core JS -->
     @include('Template.script')
+     <script>
+        window.setTimeout(function() {
+            $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                $(this).remove(); 
+            });
+        }, 3000);
+    </script>
   </body>
 </html>
