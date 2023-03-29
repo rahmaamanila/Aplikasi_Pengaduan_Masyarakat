@@ -47,7 +47,7 @@
 
   <ul class="menu-inner py-1">
     <!-- Dashboard -->
-    <li class="menu-item active">
+    <li class="menu-item {{ e($__env->yieldContent('menu')) == 'dashboard' ? 'active' : '' }}">
       <a href="/dashboard" class="menu-link">
         <i class="menu-icon tf-icons bx bx-home-circle"></i>
         <div data-i18n="Analytics">Dashboard</div>
@@ -56,7 +56,7 @@
 
     <!-- Layouts -->
       @if (auth()->user()->level == "admin")
-    <li class="menu-item">
+    <li class="menu-item {{ e($__env->yieldContent('submenu')) == 'petugas' ? 'active' : '' }}">
       <a href="/petugas" class="menu-link">
         <i class="menu-icon tf-icons bx bx-box"></i>
         <div data-i18n="Tables">Petugas</div>
@@ -69,7 +69,7 @@
     </li> -->
 
     @if (auth()->user()->level == "admin")
-    <li class="menu-item">
+    <li class="menu-item {{ e($__env->yieldContent('submenu')) == 'pengaduanadmin' ? 'active' : '' }}">
       <a href="/pengaduan" class="menu-link">
         <i class="menu-icon tf-icons bx bx-detail"></i>
         <div data-i18n="Tables">Pengaduan</div>
@@ -78,7 +78,7 @@
     @endif
 
     @if (auth()->user()->level == "petugas")
-    <li class="menu-item">
+    <li class="menu-item {{ e($__env->yieldContent('submenu')) == 'pengaduanpetugas' ? 'active' : '' }}">
       <a href="/petugas/pengaduan" class="menu-link">
         <i class="menu-icon tf-icons bx bx-detail"></i>
         <div data-i18n="Tables">Pengaduan</div>
@@ -123,7 +123,7 @@
     @endif --> 
 
     @if (auth()->user()->level == "admin")
-    <li class="menu-item">
+    <li class="menu-item {{ e($__env->yieldContent('submenu')) == 'cetak' ? 'active' : '' }}">
       <a href="/pengaduan/formcetak" class="menu-link">
         <i class="menu-icon tf-icons bx bx-file"></i>
         <div data-i18n="Basic">Laporan</div>

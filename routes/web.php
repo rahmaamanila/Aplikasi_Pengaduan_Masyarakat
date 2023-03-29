@@ -95,6 +95,7 @@ Route::group(['middleware' => ['auth', 'ceklevel:petugas']], function() {
     // petugas
     Route::get('/petugas/pengaduan', 'PetugasController@index')->name('pengaduan');
     Route::get('/petugas/pengaduan/detail/{id}', 'PetugasController@show');
+    Route::post('/petugas/pengaduan/detail/{id}', 'TanggapanController@store');
     Route::get('/petugas/pengaduan/delete/{id}', 'PetugasController@delete');
     Route::post('/petugas/pengaduan/detail/onchange/{id}', 'PetugasController@statusOnchange')->name('petugas.statusOnchange');
     Route::get('/petugas/tanggapan', 'PetugasController@indextanggapan')->name('tanggapan');

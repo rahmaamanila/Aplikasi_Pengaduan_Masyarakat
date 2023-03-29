@@ -1,4 +1,4 @@
-@section('submenu','pengaduan')
+@section('submenu','pengaduanpetugas')
 <!DOCTYPE html>
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default" data-assets-path="../assets/" data-template="vertical-menu-template-free">
 <head>
@@ -57,7 +57,7 @@
                               </td>
                               <td>
                                   <a href="/petugas/pengaduan/detail/{{ $p->id_pengaduan }}" class="btn btn-sm btn-success"><i class='bx bx-show'></i></a>
-                                  <a href="/petugas/pengaduan/delete/{{ $p->id_pengaduan }}" class="btn btn-sm btn-danger"><i class='bx bxs-trash'></i></a>
+                                  <!-- <a href="/petugas/pengaduan/delete/{{ $p->id_pengaduan }}" class="btn btn-sm btn-danger"><i class='bx bxs-trash'></i></a> -->
                               </td>
                           </tr>
                           @endforeach

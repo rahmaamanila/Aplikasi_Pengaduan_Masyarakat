@@ -77,7 +77,7 @@
                                                 @endforeach
                                             </tbody>
                                         </table>
-                                        <!-- <br>
+                                        <br>
                                         <div class="d-flex">
                                             <form action="{{ route('admin.statusOnchange', $pengaduan->id_pengaduan)}}" method="post">
                                                 @csrf
@@ -87,14 +87,14 @@
                                                     <option value="selesai" @if($pengaduan->status == "selesai") selected @endif>Selesai</option>
                                                 </select>
                                             </form>
-                                        </div> -->
+                                        </div>
 
 
                                         <!-- Vertically Centered Modal -->
-                                        <!-- <div class="col-lg-4 col-md-6">
-                                            <div class="mt-2"> -->
+                                        <div class="col-lg-4 col-md-6">
+                                            <div class="mt-2">
                                                 <!-- Button trigger modal -->
-                                                <!-- @if (empty($data_tanggapan->tanggapan))
+                                                @if (empty($data_tanggapan->tanggapan))
                                                 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCenter">
                                                     Beri tanggapan
                                                 </button>
@@ -102,10 +102,10 @@
                                                 <button type="button" class="btn btn-primary" disabled>
                                                     Sudah ditanggapi
                                                 </button>
-                                                @endif -->
+                                                @endif
 
                                                 <!-- Modal -->
-                                                <!-- <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
+                                                <div class="modal fade" id="modalCenter" tabindex="-1" aria-hidden="true">
                                                     <div class="modal-dialog modal-dialog-centered" role="document">
                                                         <div class="modal-content">
                                                             <div class="modal-header">
@@ -132,9 +132,9 @@
                                                             </form>
                                                         </div>
                                                     </div>
-                                                </div> -->
-                                            <!-- </div>
-                                        </div> -->
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -151,8 +151,7 @@
                                             @if (empty(@$data_tanggapan->tanggapan))
                                             Belum ada tanggapan
                                             @else
-                                            <p>Petugas : {{@$data_tanggapan->id}}</p>
-                                            <p>{{@$data_tanggapan->tanggapan}}</p>
+                                            {{@$data_tanggapan->tanggapan}}
                                             @endif
 
                                             @if (empty(@$data_tanggapan->tanggapan))

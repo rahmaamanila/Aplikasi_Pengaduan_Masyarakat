@@ -108,7 +108,7 @@
                                         <tr>
                                             <th>Foto</th>
                                             <td>:</td>
-                                            <td><a href="{{ asset('image/'. $pengaduan->foto ) }}" target="_blank" rel="noopener noreferrer"><img src="{{ asset('image/'. $pengaduan->foto ) }}" height="100" width="200" alt="Foto Pengaduan"></a></td>
+                                            <td><a href="{{ asset('image/'. $detail_laporanku->foto ) }}" target="_blank" rel="noopener noreferrer"><img src="{{ asset('image/'. $detail_laporanku->foto ) }}" height="100" width="200" alt="Foto Pengaduan"></a></td>
                                         </tr>
                                         <tr>
                                             <th>Isi Laporan</th>
