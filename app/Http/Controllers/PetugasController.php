@@ -38,7 +38,7 @@ class PetugasController extends Controller
     public function delete($id)
     {
         Pengaduan::where('id_pengaduan',$id)->delete();
-        return redirect('/petugas/pengaduan');
+        return redirect('/petugas/pengaduan')->with('Data terhapus','Data berhasil dihapus!');
     }
 
     public function edit($id)

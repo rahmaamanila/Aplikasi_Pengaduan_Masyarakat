@@ -131,7 +131,7 @@ class AdminController extends Controller
     public function delete($id)
     {
         User::where('id',$id)->delete();
-        return redirect('/petugas');
+        return redirect('/petugas')->with('Data dihapus', 'Berhasil dihapus');
     }
 
     // cetak seluruh pangaduan

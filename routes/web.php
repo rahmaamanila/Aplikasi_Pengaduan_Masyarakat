@@ -73,6 +73,11 @@ Route::group(['middleware' => ['auth', 'ceklevel:admin']], function() {
     Route::post('/getkbptn', 'AdminController@getkbptn')->name('getkbptn');
     Route::post('/getkcmtn', 'AdminController@getkcmtn')->name('getkcmtn');
     Route::post('/getds', 'AdminController@getds')->name('getds');
+
+    //tampil data masyarakat
+    Route::get('/user', 'UserController@index')->name('user');
+    Route::get('/user/show/{id}', 'UserController@show');
+    Route::get('/user/destroy/{id}', 'UserController@destroy');
 });
 
 Route::group(['middleware' => ['auth', 'ceklevel:masyarakat']], function() {

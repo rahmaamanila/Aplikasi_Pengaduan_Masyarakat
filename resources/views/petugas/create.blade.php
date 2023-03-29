@@ -28,7 +28,7 @@
                     <div class="col-xxl">
                         <div class="card mb-4">
                             <div class="card-header">
-                                <a href="/petugas" class="btn btn-outline-primary"><i class='bx bxs-left-arrow-circle'></i> Kembali</a>
+                                <a href="/petugas" class="btn btn-outline-primary"><i class='bx bxs-left-arrow-circle'></i></a>
                                 <h4 class="text-center">Tambah Petugas</h4>
                             </div>
                             <div class="card-body">

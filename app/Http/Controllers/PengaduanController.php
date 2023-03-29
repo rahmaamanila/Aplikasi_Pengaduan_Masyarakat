@@ -127,6 +127,6 @@ class PengaduanController extends Controller
         Tanggapan::where('id_pengaduan',$pengaduan->id_pengaduan)->delete();
         Pengaduan::where('id_pengaduan',$id)->delete();
 
-        return redirect('/pengaduan');
+        return redirect('/pengaduan')->with('Data dihapus', 'Berhasil dihapus');
     }
 }

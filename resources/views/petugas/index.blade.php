@@ -27,8 +27,13 @@
                   <span class="text-muted fw-light">Tabel /</span> Tabel Petugas
                 </h4>
                 <div class="card">
+                  @if(session('Data dihapus'))
+                      <div class="alert alert-danger" role="alert">
+                      {{session('Data dihapus')}}
+                      </div>
+                  @endif
                   <div class="card-header">
-                    <a href="/petugas/create" class="btn btn-sm btn-primary"><i class='bx bx-plus'></i>Tambah Petugas</a>
+                    <a href="/petugas/create" class="btn btn-sm btn-primary"><i class='bx bx-user-plus'></i></a>
                   </div>
                   <div class="table-responsive text-nowrap">
                     <table class="table">

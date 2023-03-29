@@ -27,6 +27,11 @@
                   <span class="text-muted fw-light">Tabel /</span> Tabel Pengaduan
                 </h4>
                 <div class="card">
+                  @if(session('Data dihapus'))
+                      <div class="alert alert-danger" role="alert">
+                      {{session('Data dihapus')}}
+                      </div>
+                  @endif
                   <div class="card-header">
                     <a href="{{route('pengaduan.pdf')}}" class="btn btn-sm btn-secondary"><i class='bx bx-save'></i></a>
                   </div>

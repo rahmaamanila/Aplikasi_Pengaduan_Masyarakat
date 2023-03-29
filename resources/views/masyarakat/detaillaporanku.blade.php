@@ -92,55 +92,55 @@
                             <div class="card-header">
                               <a href="/masyarakat/laporanku" class="btn btn-outline-primary"><i class='bx bxs-left-arrow-circle'></i> Kembali</a>
                             </div>
-                            <div class="card-body">
-                                <table class="table">
-                                    <tbody>
-                                        <tr>
-                                            <th>NIK</th>
+                              <div class="card-body">
+                                  <table class="table">
+                                      <tbody>
+                                          <tr>
+                                              <th>NIK</th>
+                                              <td>:</td>
+                                              <td>{{$detail_laporanku->user->nik ?? ''}}</td>
+                                          </tr>
+                                          <tr>
+                                              <th>Tanggal Pengaduan</th>
+                                              <td>:</td>
+                                              <td>{{$detail_laporanku->tgl_pengaduan}}</td>
+                                          </tr>
+                                          <tr>
+                                              <th>Foto</th>
+                                              <td>:</td>
+                                              <td><a href="{{ asset('image/'. $detail_laporanku->foto ) }}" target="_blank" rel="noopener noreferrer"><img src="{{ asset('image/'. $detail_laporanku->foto ) }}" height="100" width="200" alt="Foto Pengaduan"></a></td>
+                                          </tr>
+                                          <tr>
+                                              <th>Isi Laporan</th>
+                                              <td>:</td>
+                                              <td>{{$detail_laporanku->isi_laporan}}</td>
+                                          </tr>
+                                          <tr>
+                                            <th>Status</th>
                                             <td>:</td>
-                                            <td>{{$detail_laporanku->user->nik ?? ''}}</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Tanggal Pengaduan</th>
-                                            <td>:</td>
-                                            <td>{{$detail_laporanku->tgl_pengaduan}}</td>
-                                        </tr>
-                                        <tr>
-                                            <th>Foto</th>
-                                            <td>:</td>
-                                            <td><a href="{{ asset('image/'. $detail_laporanku->foto ) }}" target="_blank" rel="noopener noreferrer"><img src="{{ asset('image/'. $detail_laporanku->foto ) }}" height="100" width="200" alt="Foto Pengaduan"></a></td>
-                                        </tr>
-                                        <tr>
-                                            <th>Isi Laporan</th>
-                                            <td>:</td>
-                                            <td>{{$detail_laporanku->isi_laporan}}</td>
-                                        </tr>
-                                        <tr>
-                                          <th>Status</th>
-                                          <td>:</td>
-                                          <td>
-                                              @if ($detail_laporanku->status == '0')
-                                                  <span class="badge bg-label-primary">Pending</span>
-                                              @elseif ($detail_laporanku->status == 'proses')
-                                                  <span class="badge bg-label-warning">Proses</span>
-                                              @else
-                                                  <span class="badge bg-label-success">Selesai</span>
-                                              @endif
-                                          </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="card-body text-center">
-                                    <!-- <p>{{ @$data_tanggapan->tanggapan }}</p> -->
-                                    <h4>Tanggapan</h4>
+                                            <td>
+                                                @if ($detail_laporanku->status == '0')
+                                                    <span class="badge bg-label-primary">Pending</span>
+                                                @elseif ($detail_laporanku->status == 'proses')
+                                                    <span class="badge bg-label-warning">Proses</span>
+                                                @else
+                                                    <span class="badge bg-label-success">Selesai</span>
+                                                @endif
+                                            </td>
+                                          </tr>
+                                      </tbody>
+                                  </table>
+                                  <div class="card-body text-center">
+                                      <!-- <p>{{ @$data_tanggapan->tanggapan }}</p> -->
+                                      <h4>Tanggapan</h4>
 
-                                    @if (empty(@$data_tanggapan->tanggapan))
-                                        <h5>Belum ada tanggapan</h5>
-                                    @else
-                                        <h5>{{@$data_tanggapan->tanggapan}}</h5>
-                                    @endif
-                                </div>
-                            </div>
+                                      @if (empty(@$data_tanggapan->tanggapan))
+                                          <h5>Belum ada tanggapan</h5>
+                                      @else
+                                          <h5>{{@$data_tanggapan->tanggapan}}</h5>
+                                      @endif
+                                  </div>
+                              </div>
                         </div>
                     </div>
                 </div>

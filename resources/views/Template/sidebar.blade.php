@@ -55,11 +55,20 @@
     </li>
 
     <!-- Layouts -->
-      @if (auth()->user()->level == "admin")
+    @if (auth()->user()->level == "admin")
     <li class="menu-item {{ e($__env->yieldContent('submenu')) == 'petugas' ? 'active' : '' }}">
       <a href="/petugas" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-box"></i>
+        <i class="menu-icon tf-icons bx bx-user"></i>
         <div data-i18n="Tables">Petugas</div>
+      </a>
+    </li>
+    @endif
+
+    @if (auth()->user()->level == "admin")
+    <li class="menu-item {{ e($__env->yieldContent('submenu')) == 'user' ? 'active' : '' }}">
+      <a href="/user" class="menu-link">
+        <i class="menu-icon tf-icons bx bx-group"></i>
+        <div data-i18n="Tables">Masyarakat</div>
       </a>
     </li>
     @endif
@@ -71,7 +80,7 @@
     @if (auth()->user()->level == "admin")
     <li class="menu-item {{ e($__env->yieldContent('submenu')) == 'pengaduanadmin' ? 'active' : '' }}">
       <a href="/pengaduan" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-detail"></i>
+        <i class="menu-icon tf-icons bx bx-user-voice"></i>
         <div data-i18n="Tables">Pengaduan</div>
       </a>
     </li>
