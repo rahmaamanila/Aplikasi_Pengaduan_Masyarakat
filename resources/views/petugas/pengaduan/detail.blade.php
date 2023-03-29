@@ -118,7 +118,7 @@
                                                             <div class="row">
                                                                 <div class="col mb-3">
                                                                     <label for="nameWithTitle" class="form-label">Tanggapan</label>
-                                                                    <textarea name="tanggapan" rows="5" class="form-control" placeholder="isi tanggapan .." required></textarea>
+                                                                    <textarea name="tanggapan" rows="5" class="form-control" placeholder="isi tanggapan .." required autofocus></textarea>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -175,7 +175,7 @@
                                                                     <div class="row">
                                                                         <div class="col mb-3">
                                                                             <label for="nameWithTitle" class="form-label">Tanggapan</label>
-                                                                            <textarea name="tanggapan" rows="5" class="form-control" required>{{@$data_tanggapan->tanggapan}}</textarea>
+                                                                            <textarea name="tanggapan" rows="5" class="form-control" required autofocus>{{@$data_tanggapan->tanggapan}}</textarea>
                                                                         </div>
                                                                     </div>
                                                                 </div>

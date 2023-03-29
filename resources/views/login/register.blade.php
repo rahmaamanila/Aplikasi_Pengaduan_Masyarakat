@@ -81,7 +81,7 @@
                                 <label for="nik" class="form-label">NIK</label>
                                 <div class="input-group input-group-merge">
                                     <span class="input-group-text"><i class="bx bx-id-card"></i></span>
-                                    <input type="number" class="form-control" name="nik" placeholder="Masukkan nik" value="{{ old('nik') }}" autofocus>
+                                    <input type="number" class="form-control" name="nik" placeholder="Masukkan nik" value="{{ old('nik') }}" autocomplete="off" autofocus>
                                 </div>
                                 @if($errors->has('nik'))
                                     <div class="text-danger">
@@ -94,7 +94,7 @@
                                 <label for="nama" class="form-label">nama</label>
                                 <div class="input-group input-group-merge">
                                     <span class="input-group-text"><i class="bx bx-user"></i></span>
-                                    <input type="text" class="form-control" name="nama" placeholder="Masukkan nama" value="{{ old('nama') }}">
+                                    <input type="text" class="form-control" name="nama" placeholder="Masukkan nama" value="{{ old('nama') }}" autocomplete="off">
                                 </div>
                                 @if($errors->has('nama'))
                                     <div class="text-danger">
@@ -107,7 +107,7 @@
                                 <label for="email" class="form-label">Email</label>
                                 <div class="input-group input-group-merge">
                                     <span class="input-group-text"><i class="bx bx-envelope"></i></span>
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan email" value="{{ old('email') }}">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan email" value="{{ old('email') }}" autocomplete="off">
                                 </div>
                                 @if($errors->has('email'))
                                     <div class="text-danger">
@@ -135,7 +135,7 @@
                                 <label for="telp" class="form-label">Telp</label>
                                 <div class="input-group input-group-merge">
                                     <span class="input-group-text"><i class="bx bx-phone"></i></span>
-                                    <input type="number" class="form-control" name="telp" placeholder="Masukkan no telepon" value="{{ old('telp') }}">
+                                    <input type="number" class="form-control" name="telp" placeholder="Masukkan no telepon" value="{{ old('telp') }}" autocomplete="off">
                                 </div>
                                 @if($errors->has('telp'))
                                     <div class="text-danger">
@@ -180,7 +180,7 @@
                                 <label for="rt" class="form-label">RT</label>
                                 <div class="input-group input-group-merge">
                                     <span class="input-group-text"><i class="bx bxs-landmark"></i></span>
-                                    <input type="number" class="form-control" id="rt" name="rt" placeholder="Masukkan rt" value="{{ old('rt') }}">
+                                    <input type="number" class="form-control" id="rt" name="rt" placeholder="Masukkan rt" value="{{ old('rt') }}" autocomplete="off">
                                 </div>
                                 @if($errors->has('rt'))
                                     <div class="text-danger">
@@ -193,7 +193,7 @@
                                 <label for="rw" class="form-label">RW</label>
                                 <div class="input-group input-group-merge">
                                     <span class="input-group-text"><i class="bx bxs-landmark"></i></span>
-                                    <input type="number" class="form-control" id="rw" name="rw" placeholder="Masukkan rw" value="{{ old('rw') }}">
+                                    <input type="number" class="form-control" id="rw" name="rw" placeholder="Masukkan rw" value="{{ old('rw') }}" autocomplete="off">
                                 </div>
                                 @if($errors->has('rw'))
                                     <div class="text-danger">
@@ -206,7 +206,7 @@
                                 <label for="kode_pos" class="form-label">Kode Pos</label>
                                 <div class="input-group input-group-merge">
                                     <span class="input-group-text"><i class="bx bx-building"></i></span>
-                                    <input type="number" class="form-control" id="kode_pos" name="kode_pos" placeholder="Masukkan kode pos" value="{{ old('kode_pos') }}">
+                                    <input type="number" class="form-control" id="kode_pos" name="kode_pos" placeholder="Masukkan kode pos" value="{{ old('kode_pos') }}" autocomplete="off">
                                 </div>
                                 @if($errors->has('kode_pos'))
                                     <div class="text-danger">

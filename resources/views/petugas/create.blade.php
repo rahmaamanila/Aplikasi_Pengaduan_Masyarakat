@@ -37,7 +37,7 @@
                                     <div class="row">
                                         <div class="mb-3 col-md-6">
                                             <label for="nik" class="form-label">NIK</label>
-                                            <input class="form-control" type="number" name="nik" value="{{ old('nik') }}" autofocus/>
+                                            <input class="form-control" type="number" name="nik" value="{{ old('nik') }}" autocomplete="off" autofocus/>
                                             @if($errors->has('nik'))
                                                 <div class="text-danger">
                                                     {{ $errors->first('nik')}}
@@ -46,7 +46,7 @@
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label for="nama" class="form-label">Nama</label>
-                                            <input class="form-control" type="text" name="nama" value="{{ old('nama') }}"/>
+                                            <input class="form-control" type="text" name="nama" value="{{ old('nama') }}" autocomplete="off"/>
                                             @if($errors->has('nama'))
                                                 <div class="text-danger">
                                                     {{ $errors->first('nama')}}
@@ -55,7 +55,7 @@
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label for="email" class="form-label">Email</label>
-                                            <input class="form-control" type="email" name="email" value="{{ old('email') }}"/>
+                                            <input class="form-control" type="email" name="email" value="{{ old('email') }}" autocomplete="off"/>
                                             @if($errors->has('email'))
                                                 <div class="text-danger">
                                                     {{ $errors->first('email')}}
@@ -79,7 +79,7 @@
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label" for="telp">Nomer Telepon</label>
                                             <div class="input-group input-group-merge">
-                                                <input type="number" name="telp" class="form-control" value="{{ old('telp') }}"/>
+                                                <input type="number" name="telp" class="form-control" value="{{ old('telp') }}" autocomplete="off"/>
                                             </div>
                                             @if($errors->has('telp'))
                                                 <div class="text-danger">
@@ -116,7 +116,7 @@
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label for="rt" class="form-label">RT</label>
-                                            <input class="form-control" type="number" name="rt" value="{{ old('rt') }}"/>
+                                            <input class="form-control" type="number" name="rt" value="{{ old('rt') }}" autocomplete="off"/>
                                             @if($errors->has('rt'))
                                                 <div class="text-danger">
                                                     {{ $errors->first('rt')}}
@@ -125,7 +125,7 @@
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label for="rw" class="form-label">RW</label>
-                                            <input type="number" class="form-control" name="rw" value="{{ old('rw') }}"/>
+                                            <input type="number" class="form-control" name="rw" value="{{ old('rw') }}" autocomplete="off"/>
                                             @if($errors->has('rw'))
                                                 <div class="text-danger">
                                                     {{ $errors->first('rw')}}
@@ -134,7 +134,7 @@
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label for="rw" class="form-label">Kode Pos</label>
-                                            <input type="number" class="form-control" name="kode_pos" value="{{ old('kode_pos') }}"/>
+                                            <input type="number" class="form-control" name="kode_pos" value="{{ old('kode_pos') }}" autocomplete="off"/>
                                             @if($errors->has('kode_pos'))
                                                 <div class="text-danger">
                                                     {{ $errors->first('kode_pos')}}

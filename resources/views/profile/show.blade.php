@@ -145,7 +145,7 @@
                                     <div class="row">
                                         <div class="mb-3 col-md-6">
                                             <label for="nama" class="form-label">Nama</label>
-                                            <input class="form-control" type="text" name="nama" value="{{ $user->nama }}"/>
+                                            <input class="form-control" type="text" name="nama" value="{{ $user->nama }}" autocomplete="off"/>
                                             @if($errors->has('nama'))
                                                 <div class="text-danger">
                                                     {{ $errors->first('nama')}}
@@ -154,7 +154,7 @@
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label for="email" class="form-label">Email</label>
-                                            <input class="form-control" type="email" name="email" value="{{ $user->email }}"/>
+                                            <input class="form-control" type="email" name="email" value="{{ $user->email }}" autocomplete="off"/>
                                             @if($errors->has('email'))
                                                 <div class="text-danger">
                                                     {{ $errors->first('email')}}
@@ -163,7 +163,7 @@
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label class="form-label" for="telp">No. Telp</label>
-                                            <input type="number" name="telp" class="form-control" value="{{ $user->telp }}"/>
+                                            <input type="number" name="telp" class="form-control" value="{{ $user->telp }}" autocomplete="off"/>
                                             @if($errors->has('telp'))
                                                 <div class="text-danger">
                                                     {{ $errors->first('telp')}}
@@ -181,7 +181,7 @@
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label for="rt" class="form-label">RT</label>
-                                            <input class="form-control" type="number" name="rt" value="{{ $user->rt }}"/>
+                                            <input class="form-control" type="number" name="rt" value="{{ $user->rt }}" autocomplete="off"/>
                                             @if($errors->has('rt'))
                                                 <div class="text-danger">
                                                     {{ $errors->first('rt')}}
@@ -190,7 +190,7 @@
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label for="rw" class="form-label">RW</label>
-                                            <input type="number" class="form-control" name="rw" value="{{ $user->rw }}"/>
+                                            <input type="number" class="form-control" name="rw" value="{{ $user->rw }}" autocomplete="off"/>
                                             @if($errors->has('rw'))
                                                 <div class="text-danger">
                                                     {{ $errors->first('rw')}}
@@ -199,7 +199,7 @@
                                         </div>
                                         <div class="mb-3 col-md-6">
                                             <label for="rw" class="form-label">Kode Pos</label>
-                                            <input type="number" class="form-control" name="kode_pos" value="{{ $user->kode_pos }}"/>
+                                            <input type="number" class="form-control" name="kode_pos" value="{{ $user->kode_pos }}" autocomplete="off"/>
                                             @if($errors->has('kode_pos'))
                                                 <div class="text-danger">
                                                     {{ $errors->first('kode_pos')}}

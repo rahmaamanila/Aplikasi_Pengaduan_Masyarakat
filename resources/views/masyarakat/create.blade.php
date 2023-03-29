@@ -127,7 +127,7 @@
 
                                 <div class="form-group">
                                     <label>Laporan</label>
-                                    <textarea name="isi_laporan" rows="5" class="form-control" placeholder="Isi Laporan" required></textarea>
+                                    <textarea name="isi_laporan" rows="5" class="form-control" placeholder="Isi Laporan" required autofocus></textarea>
                                     
                                     @if($errors->has('isi_laporan'))
                                         <div class="text-danger">
