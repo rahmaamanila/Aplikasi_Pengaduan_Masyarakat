@@ -26,47 +26,50 @@
                 <h4 class="fw-bold py-3 mb-4">
                   <span class="text-muted fw-light">Tabel /</span> Tabel Petugas
                 </h4>
+                @if(session('Data dihapus'))
+                    <div class="alert alert-danger" role="alert">
+                    {{session('Data dihapus')}}
+                    </div>
+                @endif
                 <div class="card">
-                  @if(session('Data dihapus'))
-                      <div class="alert alert-danger" role="alert">
-                      {{session('Data dihapus')}}
-                      </div>
-                  @endif
                   <div class="card-header">
-                    <a href="/petugas/create" class="btn btn-sm btn-primary"><i class='bx bx-user-plus'></i></a>
+                    <a href="/petugas/create" class="btn btn-sm btn-outline-primary"><i class='bx bx-user-plus'></i></a>
                   </div>
-                  <div class="table-responsive text-nowrap">
-                    <table class="table">
-                      <caption class="ms-4">Daftar Petugas</caption>
-                      <thead>
+                  <div class="card-body">
+                    <div class="table-responsive text-nowrap">
+                      <table class="table">
+                        <caption class="ms-4">Daftar Petugas</caption>
+                        <thead class="table-primary">
+                            <tr>
+                              <th>No</th>
+                              <th>NIK</th>
+                              <th>Nama</th>
+                              <th>Email</th>
+                              <th>Telepon</th>
+                              <th>Alamat</th>
+                              <th>Opsi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          @foreach($petugas as $p)
                           <tr>
-                            <th>No</th>
-                            <th>NIK</th>
-                            <th>Nama</th>
-                            <th>Email</th>
-                            <th>Telepon</th>
-                            <th>Alamat</th>
+                              <td>{{ $loop->iteration }}</td>
+                              <td>{{ $p->nik }}</td>
+                              <td>{{ $p->nama }}</td>
+                              <td>{{ $p->email }}</td>
+                              <td>{{ $p->telp }}</td>
+                              <td>{{ $p->alamat }}</td>
+                              <td>
+                                  <!-- <a href="/petugas/edit/{{ $p->id }}" class="btn btn-warning">Edit</a> -->
+                                  <a href="/petugas/show/{{ $p->id }}" class="btn btn-sm btn-outline-success" title="Detail"><i class='bx bx-show'></i></a>
+                                  <a href="/petugas/delete/{{ $p->id }}" class="btn btn-sm btn-outline-danger" title="Hapus" onclick="return confirm('Yakin ingin dihapus?')"><i class='bx bxs-trash'></i></a>
+                              </td>
                           </tr>
-                      </thead>
-                      <tbody>
-                        @foreach($petugas as $p)
-                        <tr>
-                            <td>{{ $loop->iteration }}</td>
-                            <td>{{ $p->nik }}</td>
-                            <td>{{ $p->nama }}</td>
-                            <td>{{ $p->email }}</td>
-                            <td>{{ $p->telp }}</td>
-                            <td>{{ $p->alamat }}</td>
-                            <td>
-                                <!-- <a href="/petugas/edit/{{ $p->id }}" class="btn btn-warning">Edit</a> -->
-                                <a href="/petugas/show/{{ $p->id }}" class="btn btn-sm btn-success" title="Detail"><i class='bx bx-show'></i></a>
-                                <a href="/petugas/delete/{{ $p->id }}" class="btn btn-sm btn-danger" title="Hapus" onclick="return confirm('Yakin ingin dihapus?')"><i class='bx bxs-trash'></i></a>
-                            </td>
-                        </tr>
-                        @endforeach
-                      </tbody>
-                    </table>
-                    {{ $petugas->links() }}
+                          @endforeach
+                        </tbody>
+                      </table>
+                      {{ $petugas->links() }}
+                    </div>
                   </div>
                 </div>
             </div>

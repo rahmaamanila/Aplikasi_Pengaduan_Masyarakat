@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Landing</title>
   <meta charset="UTF-8">
@@ -11,6 +12,7 @@
   <link rel="stylesheet" href="{{asset('simple/vendors/aos/css/aos.css')}}">
   <link rel="stylesheet" href="{{asset('simple/css/style.min.css')}}">
 </head>
+
 <body id="body" data-spy="scroll" data-target=".navbar" data-offset="100">
   <header id="header-section">
     <nav class="navbar navbar-expand-lg pl-sm-0" id="navbar">
@@ -49,10 +51,10 @@
             </li> -->
           </ul>
         </div>
-      </div> 
-    </nav>   
+      </div>
+    </nav>
   </header>
-  <div class="banner" >
+  <div class="banner">
     <div class="container">
       <h1 class="font-weight-semibold">Layanan Pengaduan Masyarakat</h1>
       <h6 class="font-weight-normal text-muted pb-3">Laporkan Masalah Anda terkait lingkungan di sini</h6>
@@ -60,7 +62,7 @@
         <a href="/login" class="btn btn-opacity-light mr-1">Sign In</a>
         <a href="/register" class="btn btn-opacity-info ml-1">Sign Up</a>
       </div>
-      <img src="{{asset('simple/images/Group171.svg')}}" alt="" class="img-fluid">
+      <img src="{{asset('simple/images/Group171.svg')}}" alt="" class="img-fluid mt-4">
     </div>
   </div>
   <script src="{{asset('simple/vendors/jquery/jquery.min.js')}}"></script>
@@ -69,4 +71,5 @@
   <script src="{{asset('simple/vendors/aos/js/aos.js')}}"></script>
   <script src="{{asset('simple/js/landingpage.js')}}"></script>
 </body>
+
 </html>

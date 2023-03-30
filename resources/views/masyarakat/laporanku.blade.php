@@ -62,7 +62,7 @@
                     <li>
                       <a class="dropdown-item" href="/profile/showmas">
                         <i class="bx bx-user me-2"></i>
-                        <span class="align-middle">Profile Saya</span>
+                        <span class="align-middle">Profil Saya</span>
                       </a>
                     </li>
                     <li>

@@ -27,16 +27,16 @@
                   <span class="text-muted fw-light">Tabel /</span> Tabel Pengaduan
                 </h4>
                 <div class="card">
-                  @if(session('Data dihapus'))
-                      <div class="alert alert-danger" role="alert">
-                      {{session('Data dihapus')}}
-                      </div>
-                  @endif
                   <div class="card-header">
-                    <a href="{{route('pengaduan.pdf')}}" class="btn btn-sm btn-secondary"><i class='bx bx-save'></i></a>
+                    <a href="{{route('pengaduan.pdf')}}" class="btn btn-sm btn-outline-secondary"><i class='bx bx-save'></i></a>
                   </div>
                   <div class="card-body">
-                  <div class="table-responsive text-nowrap">
+                    @if(session('Data dihapus'))
+                        <div class="alert alert-danger" role="alert">
+                        {{session('Data dihapus')}}
+                        </div>
+                    @endif
+                    <div class="table-responsive text-nowrap">
                       <table class="table" id="myTable">
                         <thead class="table-primary">
                             <tr>
@@ -63,8 +63,8 @@
                                 @endif
                               </td>
                               <td>
-                                  <a href="/pengaduan/detail/{{ $p->id_pengaduan }}" class="btn btn-sm btn-success"><i class='bx bx-show'></i></a>
-                                  <a href="/pengaduan/delete/{{ $p->id_pengaduan }}" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin dihapus?')"><i class='bx bxs-trash'></i></a>
+                                  <a href="/pengaduan/detail/{{ $p->id_pengaduan }}" class="btn btn-sm btn-outline-success"><i class='bx bx-show'></i></a>
+                                  <a href="/pengaduan/delete/{{ $p->id_pengaduan }}" class="btn btn-sm btn-outline-danger" onclick="return confirm('Yakin ingin dihapus?')"><i class='bx bxs-trash'></i></a>
                               </td>
                           </tr>
                           @endforeach

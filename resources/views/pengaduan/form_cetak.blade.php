@@ -40,7 +40,7 @@
                                     </div>
                                     <div>
 
-                                        <a href="#" onclick="this.href='/pengaduan/cetakpertanggal/'+ document.getElementById('tglawal').value + '/' + document.getElementById('tglakhir').value" class="btn btn-primary"><i class='bx bx-save'></i> Cetak</a>
+                                        <a href="#" onclick="this.href='/pengaduan/cetakpertanggal/'+ document.getElementById('tglawal').value + '/' + document.getElementById('tglakhir').value" class="btn btn-outline-primary"><i class='bx bx-save'></i> Cetak</a>
                                     </div>
                                 </div>
                             </div>

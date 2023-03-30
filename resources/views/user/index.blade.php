@@ -62,8 +62,8 @@
                                         <td>{{ $p->telp }}</td>
                                         <td>{{$p->alamat}}</td>
                                         <td>
-                                            <a href="/user/show/{{ $p->id }}" class="btn btn-sm btn-warning"><i class='bx bx-show'></i></a>
-                                            <a href="/user/destroy/{{ $p->id }}" class="btn btn-sm btn-danger" onclick="return confirm('Yakin ingin dihapus?')"><i class='bx bx-trash-alt'></i></a>
+                                            <a href="/user/show/{{ $p->id }}" class="btn btn-sm btn-outline-success"><i class='bx bx-show'></i></a>
+                                            <a href="/user/destroy/{{ $p->id }}" class="btn btn-sm btn-outline-danger" onclick="return confirm('Yakin ingin dihapus?')"><i class='bx bxs-trash'></i></a>
                                         </td>
                                     </tr>
                                     @endforeach

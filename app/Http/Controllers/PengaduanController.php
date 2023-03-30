@@ -19,11 +19,11 @@ class PengaduanController extends Controller
     }
 
     // create masyarakat
-    public function create()
-    {
-        $pengaduan = Pengaduan::all();
-        return view('masyarakat.create', compact('pengaduan'));
-    }
+        public function create()
+        {
+            $pengaduan = Pengaduan::all();
+            return view('masyarakat.create', compact('pengaduan'));
+        }
 
     // store masyarakat
     public function store(Request $request)

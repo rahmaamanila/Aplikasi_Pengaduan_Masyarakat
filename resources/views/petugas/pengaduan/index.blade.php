@@ -61,7 +61,7 @@
                                 @endif
                               </td>
                               <td>
-                                  <a href="/petugas/pengaduan/detail/{{ $p->id_pengaduan }}" class="btn btn-sm btn-success"><i class='bx bx-show'></i></a>
+                                  <a href="/petugas/pengaduan/detail/{{ $p->id_pengaduan }}" class="btn btn-sm btn-outline-success"><i class='bx bx-show'></i></a>
                                   <!-- <a href="/petugas/pengaduan/delete/{{ $p->id_pengaduan }}" class="btn btn-sm btn-danger"><i class='bx bxs-trash'></i></a> -->
                               </td>
                           </tr>

@@ -89,7 +89,7 @@
     @if (auth()->user()->level == "petugas")
     <li class="menu-item {{ e($__env->yieldContent('submenu')) == 'pengaduanpetugas' ? 'active' : '' }}">
       <a href="/petugas/pengaduan" class="menu-link">
-        <i class="menu-icon tf-icons bx bx-detail"></i>
+        <i class="menu-icon tf-icons bx bx-user-voice"></i>
         <div data-i18n="Tables">Pengaduan</div>
       </a>
     </li>
