@@ -26,16 +26,16 @@
                 <h4 class="fw-bold py-3 mb-4">
                   <span class="text-muted fw-light">Tabel /</span> Tabel Petugas
                 </h4>
-                @if(session('Data dihapus'))
-                    <div class="alert alert-danger" role="alert">
-                    {{session('Data dihapus')}}
-                    </div>
-                @endif
                 <div class="card">
                   <div class="card-header">
                     <a href="/petugas/create" class="btn btn-sm btn-outline-primary"><i class='bx bx-user-plus'></i></a>
                   </div>
                   <div class="card-body">
+                    @if(session('Data dihapus'))
+                        <div class="alert alert-danger" role="alert">
+                        {{session('Data dihapus')}}
+                        </div>
+                    @endif
                     <div class="table-responsive text-nowrap">
                       <table class="table">
                         <caption class="ms-4">Daftar Petugas</caption>
