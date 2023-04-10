@@ -113,12 +113,12 @@
                 <h4 class="mb-2 text-center">Pengaduan Masyarakat<br>Login</h4>
                 <!-- <p class="mb-3 text-center">Please sign-in to your account and start the aplication</p> -->
 
-                @if(session('success'))
+                <!-- @if(session('success'))
                 <div class="alert alert-success" role="alert">
-                  <!-- <button type="button" class="close" data-dismiss="alert" aria-label="close">&times;</button>  -->
+                  <button type="button" class="close" data-dismiss="alert" aria-label="close">&times;</button> 
                   {{session('success')}}
                 </div>
-                @endif
+                @endif -->
 
                 @if(session('error'))
                 <div class="alert alert-danger" role="alert">

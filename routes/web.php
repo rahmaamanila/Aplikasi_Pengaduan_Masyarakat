@@ -3,7 +3,7 @@
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PetugasController;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Foundation\Auth\EmailVerificationRequest;
+// use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,15 +26,6 @@ Route::get('/logout', 'LoginController@logout')->name('logout');
 Route::get('/register', 'LoginController@register')->name('register');
 Route::post('/simpanregister', 'LoginController@simpanregister')->name('simpanregister');
 
-Route::get('/email/verify', function (){
-    return view('auth.verify-email');
-})->middleware('auth')->name('verification.notice');
-
-Route::get('/email/verify/{id}/{hash}', function(EmailVerificationRequest $request){
-    $request->fulfill();
-
-    return redirect('/login');
-})->middleware(['auth','signed'])->name('verification.verify');
 
 Route::post('/getkabupaten', 'LoginController@getkabupaten')->name('getkabupaten');
 Route::post('/getkecamatan', 'LoginController@getkecamatan')->name('getkecamatan');

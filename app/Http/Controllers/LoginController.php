@@ -126,10 +126,8 @@ class LoginController extends Controller
         $data_user->village_id = request()->get('village_id');
         $data_user->save();
 
-        event(new Registered($data_user));
+       
 
-        Auth::login($data_user);
-
-        return redirect()->to('/login')->with('success', 'Akun berhasil dibuat, silahkan verifikasi Email Anda');
+        return redirect()->to('/login');
     }
 }
